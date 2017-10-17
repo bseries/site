@@ -27,9 +27,11 @@ $ make prefill
 
 As a PHP project the B-Series uses composer for managing PHP libraries. Let's install the initial round of dependencies. Let's also install some more B-Series modules.
 ```
+$ cd app
 $ composer install
 $ composer require bseries/cms_post
 $ composer require bseries/cms_social
+$ cd ..
 ```
 
 Some B-modules contain an `assets` directory, which needs to be symlinked into the project's `assets` directory, so files in there can be accessed by the web server.
