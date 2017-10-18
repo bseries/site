@@ -4,22 +4,22 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-name = "__NAME__"
+name = "site"
 context = "dev"
 
-domain "__DOMAIN__" {
+domain "site.test" {
 	www = "drop"
 	# Either paths or special string "!self-signed"
 	# SSL = {
-	# 	certificate = "config/ssl/__DOMAIN__.crt"
-	# 	certificateKey = "config/ssl/__DOMAIN__.key"
+	# 	certificate = "config/ssl/site.test.crt"
+	# 	certificateKey = "config/ssl/site.test.key"
 	# }
 	# auth {
 	# 	password = "changeme!"
 	# }
 }
 
-database "__NAME__" {
+database "site" {
 	password = ""
 }
 
