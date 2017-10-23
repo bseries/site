@@ -14,10 +14,10 @@
 CONTEXT="dev"
 
 # The projects name.
-NAME="site"
+NAME="bseries_site"
 
 # The domain under which the project is served.
-DOMAIN="site.test"
+DOMAIN="bseries-site.test"
 
 # -----------------------------------------------------------
 # Debugging / Analysis
@@ -57,8 +57,8 @@ SECRET_BASE="omPUGA8/rcud988INQ8SSNj4F0Rc0zsWQTcBIf3NUkRf5hNfdM1X8AwJ1YJaBcz/6oZ
 # Database
 # -----------------------------------------------------------
 DB_HOST="localhost"
-DB_DATABASE="site"
-DB_USER="site"
+DB_DATABASE="bseries_site"
+DB_USER="bseries_site"
 DB_PASSWORD=""
 
 # -----------------------------------------------------------
@@ -114,16 +114,16 @@ HONOR_DNT="y"
 # the webroot instead of the project root.
 WEBROOT_NESTING="n"
 
-ASSETS_HTTP_BASE="site.test/assets"
-ASSETS_HTTPS_BASE="site.test/assets"
+ASSETS_HTTP_BASE="bseries-site.test/assets"
+ASSETS_HTTPS_BASE="bseries-site.test/assets"
 
 HAS_IMAGICK="y"
 HAS_GHOSTSCRIPT="y"
 HAS_FFMPEG="y"
 HAS_SOX="y"
 
-MEDIA_VERSIONS_HTTP_BASE="site.test/media"
-MEDIA_VERSIONS_HTTPS_BASE="site.test/media"
+MEDIA_VERSIONS_HTTP_BASE="bseries-site.test/media"
+MEDIA_VERSIONS_HTTPS_BASE="bseries-site.test/media"
 
 # -----------------------------------------------------------
 # Jobs
@@ -155,11 +155,11 @@ MAIL_KEY="__MAIL_KEY__"
 
 # The domain configured for the mailing service. When using mailgun
 # and a "mg" subdomain, this must include the subdomain as well.
-MAIL_DOMAIN="mg.site.test"
+MAIL_DOMAIN="mg.bseries-site.test"
 
 # The default from address. With a mailgun subdomain this may
 # not include the subdomain.
-MAIL_FROM="noreply@site.test"
+MAIL_FROM="noreply@bseries-site.test"
 
 # Separate multiple types by space (i.e. "text html").
 MAIL_TYPES="text"

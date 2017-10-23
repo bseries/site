@@ -4,10 +4,10 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-name = "site"
+name = "bseries_site"
 context = "dev"
 
-domain "site.test" {
+domain "bseries-site.test" {
 	www = "drop"
 	# Either paths or special string "!self-signed"
 	SSL = {
@@ -19,7 +19,7 @@ domain "site.test" {
 	# }
 }
 
-database "site" {
+database "bseries_site" {
 	password = ""
 }
 
