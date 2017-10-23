@@ -22,11 +22,20 @@
 :root {
   /* Colors */
   --color-black:     #1b1b1b;
-  --color-blue:      #0e26fc;
+  --color-blue:   #0e26fc;
   --color-yellow:    #ffd200;
   --color-green:     #8ad835;
   --color-red:       red;
+  --color-white: white;
+  --color-smoke: #fefcfc;
+  --color-gray: #e6e6e6;
 
   /* Typography */
-  --font-family-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans-neue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-sans: Helvetica, Arial, sans-serif;
+
+  --font-size-alpha: 32px;
+  --font-size-beta:  24px;
+  --font-size-gamma: 18px;
+  --font-size-delta: 16px;
 }

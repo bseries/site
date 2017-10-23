@@ -10,6 +10,14 @@
 .limit--normal {
   max-width: 1200px;
 }
+.limit--tight {
+  max-width: 840px;
+}
+
+.center-column {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Content Padding
 ---------------------------------------------------------------- */
@@ -18,4 +26,35 @@
 }
 .cp--quatro {
   padding: 160px;
+}
+
+/* Section Coloring
+---------------------------------------------------------------- */
+.sc--white {
+  background-color: var(--color-white);
+}
+.sc--blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+.sc--black {
+  background-color: var(--color-dim-black);
+  color: var(--color-white);
+}
+.sc--gray {
+  background-color: var(--color-gray);
+}
+
+/* Section Types
+---------------------------------------------------------------- */
+.s--image,
+.s--image--small {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80vh;
+}
+.s--image--small {
+  height: 500px;
 }

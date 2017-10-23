@@ -18,6 +18,9 @@
 @import "globals/footer.css";
 @import "globals/forms.css";
 @import "globals/buttons.css";
+@import "globals/list.css";
+
+@import "components/slideshow.css";
 
 /*
   All "views" CSS files, except those in "elements", are loaded

@@ -5,6 +5,27 @@
  * license that can be found in the LICENSE file.
  */
 
-.t--alpha {}
-.t--beta {}
-.t--gamma {}
+.h--alpha,
+.h--beta,
+.h--gamma,
+.h--delta {
+  font-family: var(--font-family-sans-neue);
+}
+
+.h--alpha,
+.t--alpha {
+  font-size: var(--font-size-alpha);
+}
+.h--beta,
+.t--beta {
+  font-size: var(--font-size-beta);
+}
+.h--gamma,
+.t--gamma {
+  font-size: var(--font-size-gamma);
+}
+.h--delta,
+.t--delta {
+  font-size: var(--font-size-delta);
+  line-height: 1.55;
+}

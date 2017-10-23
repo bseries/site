@@ -19,7 +19,7 @@ body {
   color: var(--color-dim-black);
   background-color: #fff;
 
-  padding: 20px 30px;
+  padding: 0;
 }
 
 * {
@@ -28,4 +28,8 @@ body {
 
 abbr[title] {
   text-decoration: none;
+}
+
+main {
+  min-height: 80vh;
 }

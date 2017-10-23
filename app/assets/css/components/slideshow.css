@@ -1,0 +1,88 @@
+.slideshow {
+}
+.slideshow-container {
+  min-height: 0;
+  transition: opacity .5s, min-height 5s;
+}
+.slideshow-container.loading {
+  min-height: 900px;
+  opacity: 0;
+}
+@media (max-width: 900px) {
+  .slideshow-container.loading {
+    min-height: 500px;
+  }
+}
+
+.swiper-container {
+  opacity: 1;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+.swiper-container-no-flexbox .swiper-slide {
+  float: left;
+}
+.swiper-container-vertical > .swiper-wrapper {
+  flex-direction: column;
+}
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  transition-property: transform;
+  box-sizing: content-box;
+}
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  transform: translate3d(0px, 0, 0);
+}
+.swiper-container-free-mode > .swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  max-width: 100vw;
+  min-height: 0;
+  position: relative;
+  filter: grayscale(1);
+  transition: filter .5s;
+}
+.swiper-slide:hover,
+.swiper-slide-active {
+  filter: grayscale(0);
+}
+/* Auto Height */
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-container-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+
+.swiper-pagination {
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  display: inline-block;
+  background: white;
+  width: 5px;
+  margin: 5px;
+  height: 5px;
+  border-radius: 20px;
+}
+.swiper-pagination-bullet-active {
+  background: var(--color-black);
+}

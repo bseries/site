@@ -1,0 +1,20 @@
+.list--naked,
+.list--features--alpha,
+.list--features--delta {
+  list-style: none;
+  padding: 0;
+}
+.list--features--delta > li {
+  display: inline-block;
+  margin-right: 20px;
+  color: var(--color-blue);
+}
+.list--features--alpha {
+  text-align: center;
+  font-size: var(--font-size-beta);
+}
+.list--features--alpha li {
+  display: inline-block;
+  margin: 10px 20px;
+  line-height: 40px;
+}

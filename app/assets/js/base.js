@@ -21,6 +21,7 @@ requirejs.config({
 
     // App
     'router': 'app/js/router',
+    'swiper': 'app/js/swiper',
     // Add your app specific JavaScript paths here.
 
     // Compat

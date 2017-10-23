@@ -17,7 +17,7 @@ use base_media\models\MediaVersions;
 // Sites
 //
 Sites::register(PROJECT_DOMAIN, [
-	'title' => 'Application',
+	'title' => 'B–Series',
 	'fqdn' => PROJECT_DOMAIN
 ]);
 
@@ -42,9 +42,16 @@ Sites::register(PROJECT_DOMAIN, [
 // - `'email'`
 // - `'fax'`
 // - `'website'`
-Settings::register('contact.default', [
-	'organization' => 'Example Inc.',
-	'email' => 'mail@example.com'
+Settings::write('contact.default', [
+	'organization' => 'B–Series Project',
+	'address_line_1' => 'c/o Atelier Disko UG (haftungsbeschränkt) & Co. KG',
+	'address_line_2' => 'Weidenallee 10b',
+	'locality' => 'Hamburg',
+	'postal_code' => '20357',
+	'country' => 'DE',
+	'website' => 'https://b.atelierdisko.de',
+	'email' => 'b@atelierdisko.de',
+	'phone' => '040 – 228 67 11 77'
 ]);
 Settings::register('contact.exec', [
 	'organization' => 'Example Agency',

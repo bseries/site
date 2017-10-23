@@ -9,7 +9,7 @@ $site = Sites::current($this->_request);
 
 ?>
 <footer>
-	<div class="limit--normal cp">
+	<div class="limit--normal cp center-column">
 		<?= $this->_render('element', 'copyright', [
 			'holder' => $this->html->link(
 				$site->title(),
@@ -17,14 +17,6 @@ $site = Sites::current($this->_request);
 			)
 		]) ?>
 
-		<?php echo Text::insert('Website by {:name}.', [
-			'name' => $this->html->link(
-				$contact['exec']['organization'],
-				$contact['exec']['website'],
-				['target' => 'new']
-			)
-		]) ?>
-
-		<?= $this->html->link('Imprint', 'Pages::imprint') ?>.
+		<?= $this->html->link('Imprint', 'Pages::imprint') ?>
 	</div>
 </footer>

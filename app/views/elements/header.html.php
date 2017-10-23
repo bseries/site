@@ -16,9 +16,7 @@ $site = Sites::current($this->_request);
 
 ?>
 <header>
-	<div class="limit--normal cp">
-		<h1>
-			<?= $this->html->link($site->title(), '/') ?>
-		</h1>
+	<div class="limit--normal cp center-column">
+		<?= $this->html->link($site->title(), '/', ['class' => 'logo']) ?>
 	</div>
 </header>

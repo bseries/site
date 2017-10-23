@@ -6,10 +6,8 @@ $this->title('Imprint');
 $contact = Settings::read('contact');
 
 ?>
-<main class="imprint limit--normal cp">
-	<h1 class="h--alpha">Imprint</h1>
-
-	<section class="imprint__contact">
+<main class="imprint">
+	<section class="imprint__contact limit--tight cp center-column">
 		<h1 class="h--beta">
 			Contact
 			<span class="imprint__accordance">
@@ -17,10 +15,5 @@ $contact = Settings::read('contact');
 			</span>
 		</h1>
 		<?=$this->_render('element', 'contact', ['item' => $contact['default']]) ?>
-	</section>
-
-	<section class="imprint__credits">
-		<h1 class="h--beta">Website</h1>
-		<?=$this->_render('element', 'contact', ['item' => $contact['exec']]) ?>
 	</section>
 </main>
