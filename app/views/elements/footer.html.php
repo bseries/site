@@ -12,8 +12,8 @@ $site = Sites::current($this->_request);
 	<div class="limit--normal cp center-column">
 		<?= $this->_render('element', 'copyright', [
 			'holder' => $this->html->link(
-				$site->title(),
-				['controller' => 'pages', 'action' => 'home']
+				'Atelier Disko',
+				'https://atelierdisko.de'
 			)
 		]) ?>
 
