@@ -43,20 +43,19 @@ Sites::register(PROJECT_DOMAIN, [
 // - `'fax'`
 // - `'website'`
 Settings::write('contact.default', [
-	'organization' => 'B–Series Project',
+	'organization' => 'Atelier Disko B–Series',
 	'address_line_1' => 'c/o Atelier Disko UG (haftungsbeschränkt) & Co. KG',
 	'address_line_2' => 'Weidenallee 10b',
 	'locality' => 'Hamburg',
 	'postal_code' => '20357',
 	'country' => 'DE',
-	'website' => 'https://b.atelierdisko.de',
+	'website' => 'https://atelierdisko.de',
 	'email' => 'b@atelierdisko.de',
 	'phone' => '040 – 228 67 11 77'
 ]);
 Settings::register('contact.exec', [
-	'organization' => 'Example Agency',
-	'website' => 'https://example.com',
-	'email' => 'mail@example.com'
+	'organization' => 'B-Series',
+	'website' => 'http://b-series.org'
 ]);
 
 //
