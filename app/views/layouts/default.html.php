@@ -4,6 +4,8 @@
 
 use lithium\util\Inflector;
 
+$library = $this->request()->library;
+
 ?>
 <!doctype html>
 <html lang="<?= strtolower(str_replace('_', '-', $locale)) ?>">
@@ -26,6 +28,9 @@ use lithium\util\Inflector;
 				$this->assets->availableStyles('view'),
 				$this->assets->availableStyles('layout')
 			);
+			if ($library === 'li3_docs') {
+				$styles[] = '/app/css/docs';
+			}
 		?>
 		<?php echo $this->assets->style($styles) ?>
 		<?php echo $this->styles() ?>
@@ -67,7 +72,9 @@ use lithium\util\Inflector;
 
 		if ($authedUser) {
 			$classes[] = 'user-authed';
-
+		}
+		if ($library === 'li3_docs') {
+			$classes[] = 'li3-docs';
 		}
 		if (isset($device)) {
 			foreach ($device as $name => $flag) {
@@ -83,8 +90,8 @@ use lithium\util\Inflector;
 		}
 	?>
 	<body class="<?= implode(' ', $classes) ?>">
-		<?= $this->_render('element', 'header', compact('authedUser', 'nav')) ?>
+		<?= $this->_render('element', 'header', compact('authedUser', 'nav'), ['library' => 'app']) ?>
 		<?php echo $this->content() ?>
-		<?= $this->_render('element', 'footer', compact('authedUser', 'nav')) ?>
+		<?= $this->_render('element', 'footer', compact('authedUser', 'nav'), ['library' => 'app']) ?>
 	</body>
 </html>

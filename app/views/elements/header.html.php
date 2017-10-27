@@ -13,10 +13,20 @@ $site = Sites::current($this->_request);
 // $this->nav->add('main', 'News', 'Posts::index');
 // ...
 // echo $this->nav->generate('main')
+$this->nav->add('main', 'GitHub', 'https://github.com/bseries', ['target' => 'new']);
+
+$this->nav->add('main', 'Manual', [
+	'controller' => 'Books',
+	'action' => 'view',
+	'name' => 'manual',
+	'version' => '1.x',
+	'page' => 'setup'
+], ['scope' => 'li3_docs']);
 
 ?>
 <header>
 	<div class="limit--normal cp center-column">
-		<?= $this->html->link($site->title(), '/', ['class' => 'logo']) ?>
+		<?= $this->html->link($site->title(), '/', ['class' => 'logo', 'scope' => 'app']) ?>
+		<?= $this->nav->generate('main', ['class' => 'main-nav', 'match' => 'loose']) ?>
 	</div>
 </header>

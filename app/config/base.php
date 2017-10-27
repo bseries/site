@@ -90,4 +90,16 @@ $fix00 = [
 MediaVersions::registerAssembly('image', 'fix00', $fix00 + $fix);
 // ... more versions can be added here.
 
+use li3_docs\models\Indexes;
+
+Indexes::register([
+	'type' => 'book',
+	'title' => 'B-Series Manual',
+	'name' => 'manual',
+	'version' => '1.x',
+	'path' => PROJECT_PATH . '/tmp/manual',
+	'description' => <<<TEXT
+TEXT
+]);
+
 ?>

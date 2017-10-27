@@ -17,6 +17,6 @@ $site = Sites::current($this->_request);
 			)
 		]) ?>
 
-		<?= $this->html->link('Imprint', 'Pages::imprint') ?>
+		<?= $this->html->link('Imprint', 'Pages::imprint', ['scope' => 'app']) ?>
 	</div>
 </footer>

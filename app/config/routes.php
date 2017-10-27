@@ -43,4 +43,10 @@ Router::scope('app', function() {
 	// ClientRouter::provide('carts:view', 'Carts::api_view');
 });
 
+require_once PROJECT_PATH . '/app/libraries/li3_docs/config/routes.php';
+Router::attach('li3_docs', [
+	'prefix' => 'docs',
+	'library' => 'li3_docs'
+]);
+
 ?>

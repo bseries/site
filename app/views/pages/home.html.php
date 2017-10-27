@@ -21,7 +21,14 @@ $this->title('B–Series');
 					'class' => 'boxed-button hero__more',
 					'target' => 'new'
 				]) ?>
-				<?= $this->html->link('Quickstart', 'https://github.com/bseries/manual/blob/master/00_setup.md', [
+				<?= $this->html->link('Quickstart', [
+					'controller' => 'Books',
+					'action' => 'view',
+					'name' => 'manual',
+					'version' => '1.x',
+					'page' => 'setup'
+				], [
+					'scope' => 'li3_docs',
 					'class' => 'boxed-button hero__more'
 				]) ?>
 			</div>

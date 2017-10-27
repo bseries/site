@@ -10,4 +10,31 @@
   font-weight: bold;
   font-size: 30px;
   color: var(--color-gray);
+  line-height: 1;
+}
+.logo:hover {
+  color: var(--color-black);
+}
+header > div {
+  display: flex;
+}
+.main-nav {
+  line-height: 35px;
+  vertical-align: middle;
+  flex-grow: 1;
+  text-align: right;
+}
+.main-nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-blue);
+}
+.main-nav a:hover {
+  color: var(--color-black);
+}
+.main-nav a + a {
+  margin-left: 20px;
+}
+.main-nav .active {
+  text-decoration: underline;
 }

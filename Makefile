@@ -140,3 +140,10 @@ update-assets:
 	curl http://requirejs.org/docs/release/2.3.2/comments/require.js > $(ASSETS_PATH)/js/require.js
 	curl https://raw.githubusercontent.com/requirejs/domReady/latest/domReady.js > $(ASSETS_PATH)/js/require/domready.js
 	curl http://underscorejs.org/underscore.js > $(ASSETS_PATH)/js/underscore.js
+
+# -- Documentation --
+.PHONY: update-docs
+update-docs:
+	rm -fr tmp/manual
+	git clone https://github.com/bseries/manual.git tmp/manual
+	bin/li3.php docs index

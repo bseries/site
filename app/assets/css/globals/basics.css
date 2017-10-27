@@ -30,6 +30,7 @@ abbr[title] {
   text-decoration: none;
 }
 
-main {
+body > article,
+body > main {
   min-height: 80vh;
 }
