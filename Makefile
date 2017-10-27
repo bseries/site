@@ -19,7 +19,7 @@ BUILD_PATH ?= /tmp/build
 ASSETS_PATH = app/assets
 
 # Asset directories that need to be linked from modules.
-MODULE_ASSETS_LINKS = $(patsubst %/,%,$(subst app/libraries/,assets/,$(dir $(shell find app/libraries -type d -name 'assets'))))
+MODULE_ASSETS_LINKS = $(subst _,-,$(patsubst %/,%,$(subst app/libraries/,assets/,$(dir $(shell find app/libraries -type d -name 'assets')))))
 
 # These files will be checked for translatable strings. When they
 # are modified strings will be re-extracted.
@@ -38,11 +38,12 @@ prefill:
 .PHONY: init
 init: app/resources/g11n/cldr
 
-app/resources/g11n/cldr:
-	curl http://unicode.org/Public/cldr/1.8.0/core.zip -o /tmp/cldr.zip 
-	[[ ! -d /tmp/d ]] && mkdir -p /tmp/cldr
-	unzip /tmp/cldr.zip -d /tmp/cldr
-	mv /tmp/cldr/common $@
+app/resources/g11n/cldr: /tmp/cldr_180_core.zip
+	unzip -u $< -d /tmp
+	cp -r /tmp/common $@
+
+/tmp/cldr_180_core.zip:
+	curl http://unicode.org/Public/cldr/1.8.0/core.zip -o /tmp/cldr_180_core.zip 
 
 .PHONY: link-assets
 link-assets: assets/app $(MODULE_ASSETS_LINKS)
