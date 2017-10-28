@@ -16,7 +16,9 @@ $site = Sites::current($this->_request);
 				'https://atelierdisko.de'
 			)
 		]) ?>
-
+		<span class="built-with">
+			Built with <span class="built-with__bureau">Bureau</span>.
+		</span>
 		<?= $this->html->link('Imprint', 'Pages::imprint', ['scope' => 'app']) ?>
 	</div>
 </footer>

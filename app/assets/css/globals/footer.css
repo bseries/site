@@ -12,3 +12,6 @@ footer {
 footer .copyright {
   display: inline-block;
 }
+.built-with__bureau {
+  color: var(--color-blue);
+}
