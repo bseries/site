@@ -1,21 +1,33 @@
 <?php
 
-$this->title('B–Series');
+$this->title('B–Series: build custom websites that scale');
 
 ?>
 <main class="b">
 	<section class="hero sc--white">
 		<div class="limit--tight center-column cp">
 			<div class="b-icon">B</div>
-			<p class="t--beta hero__text">
-				Die Atelier Disko B–Serie besteht aus
-				<?= $this->html->link('Bento', '#bento')?>,
-				<?= $this->html->link('Bureau', '#bureau')?>,
-				<?= $this->html->link('Banque', '#boutique')?> und
-				<?= $this->html->link('Boutique', '#boutique')?>.
-				Alle vier Produkte sind untereinander frei kombinierbar und
-				mit zusätzlichen Modulen erweiterbar.
-			</p>
+			<div class="t--beta hero__text">
+				<p>
+					B-Series consists of
+					<?= $this->html->link('Bento', '#bento')?>,
+					<?= $this->html->link('Bureau', '#bureau')?>,
+					<?= $this->html->link('Banque', '#boutique')?> and
+					<?= $this->html->link('Boutique', '#boutique')?>.
+					These four products can be mix ’n’ matched and extended by
+					a wide range of high quality
+					<?= $this->html->link('already available', 'https://github.com/search?q=topic%3Amodule+org%3Abseries&type=Repositories') ?>
+					modules.
+				</p>
+				<p>
+					Developers get direct access to internals, allowing you to create
+					custom sites without the need to build fundamentals from scratch.
+				</p>
+				<p>
+					Hard working content management professionals will find the
+					admin-panel straightfoward and powerful, yet easy to learn.
+				</p>
+			</div>
 			<div class="hero__actions">
 				<?= $this->html->link('GitHub', 'https://github.com/bseries', [
 					'class' => 'boxed-button hero__more',
@@ -54,20 +66,31 @@ $this->title('B–Series');
 				</div>
 			</div>
 			<p class="t--delta">
-Der Kunde ist und bleibt König. Mit Bento haben wir aber auch an hart arbeitende
-Administratoren, Programmierer und Menschen, die Tag ein Tag aus Inhalte oder Produkte
-einpflegen und verwalten gedacht. Benutzerfreundlichkeit bedeutet also nicht bloß reibungslos
-funktionierende Technik für die Leute, die im Hintergrund damit arbeiten, sondern auch eine gut
-gestaltete, auf ihre Wünsche anpassbare Benutzeroberfläche.
+				Bento is the foundation for all other products of the B–Series. It
+				is built on top of the
+				<?= $this->html->link('li₃ PHP Framework', 'http://li3.me', ['target' => 'new']) ?>,
+				the first to break ground into major new technologies. Bento also provides user
+				management, authentication means,
+				<?= $this->html->link('tagging', 'https://github.com/bseries/base_tag', ['target' => 'new']) ?>,
+				template helpers,
+				<?= $this->html->link('data behaviors', 'https://github.com/bseries/base_core/tree/master/extensions/data/behavior' , ['target' => 'new']) ?>
+				and other reusable elements. Bento provides primitives to connect you to service providers, like
+				Vimeo, YouTube and SoundCloud.
+			</p>
+			<p class="t--delta">
+				Without a sweat and thanks to professional features like async media transcoding and flexible
+				version generation, does Bento handle gigabytes of audio, video, documents and images.
+				<?= $this->html->link('Media processing', 'https://github.com/bseries/base_media', ['target' => 'new']) ?>,
+				respects color profiles embedded in your images
+				to create high definition results, even for Retina displays.
 			</p>
 			<ul class="product__features list--features--delta">
-				<li>Dashboard
-				<li>Medien-Browser
-				<li>High Definition Images
-				<li>HTML5 Audio/Video
-				<li>Vimeo & YouTube
-				<li>Benutzerverwaltung
-				<li>Starke Passwortverschlüsselung und Schutz vor Timing-Angriffen
+				<li>admin-panel
+				<li>media-explorer
+				<li>high definition images
+				<li>HTML5 audio/video
+				<li>user accounting
+				<li>strong password encryption and protection against timing attacks
 			</ul>
 		</div>
 	</section>
