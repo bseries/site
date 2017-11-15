@@ -10,6 +10,7 @@ $site = Sites::current($this->_request);
 ?>
 <footer>
 	<div class="limit--normal cp center-column">
+		<?= $this->html->link('Imprint', 'Pages::imprint', ['scope' => 'app']) ?> /
 		<?= $this->_render('element', 'copyright', [
 			'holder' => $this->html->link(
 				'Atelier Disko',
@@ -19,6 +20,5 @@ $site = Sites::current($this->_request);
 		<span class="built-with">
 			Built with <span class="built-with__bureau">Bureau</span>.
 		</span>
-		<?= $this->html->link('Imprint', 'Pages::imprint', ['scope' => 'app']) ?>
 	</div>
 </footer>

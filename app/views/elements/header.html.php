@@ -13,7 +13,9 @@ $site = Sites::current($this->_request);
 // $this->nav->add('main', 'News', 'Posts::index');
 // ...
 // echo $this->nav->generate('main')
-$this->nav->add('main', 'GitHub', 'https://github.com/bseries', ['target' => 'new']);
+
+
+$this->nav->add('main', 'li₃ PHP Framework', 'http://li3.me', ['target' => 'new']);
 
 $this->nav->add('main', 'Manual', [
 	'controller' => 'Books',
@@ -22,6 +24,8 @@ $this->nav->add('main', 'Manual', [
 	'version' => '1.x',
 	'page' => 'setup'
 ], ['scope' => 'li3_docs']);
+
+$this->nav->add('main', 'GitHub', 'https://github.com/bseries', ['target' => 'new']);
 
 ?>
 <header>
