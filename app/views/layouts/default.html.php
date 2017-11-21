@@ -58,7 +58,7 @@ $library = $this->request()->library;
 		<?php if (!PROJECT_HONOR_DNT || !$this->_request->is('dnt')): ?>
 			<!-- Tracking -->
 			<?php if (PROJECT_GA): ?>
-				<?=$this->_render('element', 'ga') ?>
+				<?=$this->_render('element', 'ga', [], ['library' => 'app']) ?>
 			<?php endif ?>
 		<?php endif ?>
 
