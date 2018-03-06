@@ -6,8 +6,8 @@
  */
 
 footer {
-  min-height: 20vh;
-  background-color: var(--color-smoke);
+  min-height: 10vh;
+  background-color: var(--color-gray);
   text-align: right;
 }
 footer .copyright {
