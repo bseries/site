@@ -106,37 +106,32 @@ $this->title('B–Series: build custom websites that scale');
 				</div>
 			</div>
 			<p class="t--delta">
-				Erstellen und verwalten Sie Beiträge und Neuigkeiten auf ihrer Website
-				im Handumdrehen mit allen Features, die man auch von Bloggingsystem wie
-				z.B. Wordpress gewohnt ist. Verschlagwortung, Einbetten von
-				unterschiedlichen Medien, sowie ein WYSIWYG-Editor sind bereits mit an Bord.
+				Effortlessly create and manage your website’s pages and posts with all features known from other blogging systems, i.e. WordPress.
+				Also included are tagging, embedding different types of media and a WYSIWYG editor.
 			</p>
 			<p class="t--delta">
-				Sie mögen Tweets mit 160 Zeichen, schreiben gerne ausführlicher auf Facebook, machen
-				Schnappschüsse auf Instagram und wollen sich die Zeit sparen alle Inhalte wieder bei sich auf
-				der Seite zu bündeln? Genau das macht Bureau möglich. Egal wie rum. Zwitschern Sie
-				demnächst aus dem Admin-Bereich heraus an Twitter. Oder Facebook. Oder oder oder.
+				You tweet 320 characters, write extensive texts on Facebook and post snapshots on Instagram?
+				Bureau makes it possible to save time and unite all content on your own site.
+				Comfortably tweet from your admin area to Twitter, Facebook and Co.
 			</p>
 			<p class="t--delta">
-				Wichtiger Termin, über den Sie Ihre Besucher informieren möchten? Mit Bureau legen sie
-				bequem Veranstaltungen mit Datum, Zeit und Ort an und geben sie an entsprechender Stelle wieder
-				aus. Immer alles im Blick.
+				If you want to inform your visitors about an important date, you can easily create and display new events with a date, time and place. Always keeping everything in view.
 			</p>
 			<ul class="product__features list--features--delta">
-				<li>Neuigkeiten
-				<li>Banner
-				<li>Intelligenter Social–Stream
-				<li>Recordreleases
-				<li>Variable Inhalte
-				<li>Leistungsstarker WYSIWYG–Editor
-				<li>Veranstaltungen
-				<li>Videothek
-				<li>Corporate– und Künstler–Portfolios
-				<li>Sortieren von Einträgen per Drag 'n Drop
+				<li>news
+				<li>banner
+				<li>smart social-stream
+				<li>record releases
+				<li>dynamic content
+				<li>powerful WYSIWYG editor
+				<li>events
+				<li>video library
+				<li>corporate- and artist portfolios
+				<li>sorting posts via drag and drop
 			</ul>
 			<div class="product__actions">
 				<?= $this->html->link(
-					'Bureau Playoff PDF laden',
+					'Download Bureau Playoff PDF',
 					$this->assets->url('/app/doc/bureau_playoffs.pdf'),
 					['class' => 'button']
 				) ?>
@@ -151,35 +146,31 @@ $this->title('B–Series: build custom websites that scale');
 				<div class="product__logo__icon--banque product__logo__icon"></div>
 				<div class="product__logo__right">
 					<h1 class="product__logo__title h--alpha">Banque</h1>
-					<div class="product__logo__type t--gamma">Rechnungswesen</div>
+					<div class="product__logo__type t--gamma">Accounting</div>
 				</div>
 			</div>
 			<p class="t--delta">
-				Banque ist ein komplettes Rechnungswesen, das keine Wünsche offen lässt.
-				Schreiben und erstellen Sie Rechnungen mit
-				individuellen Positionen oder ergänzen Sie Teilzahlungen.
-				Da freut sich die Buchhaltung.
-				Und ihr Steuerberater.
+				Banque is a complete accounting system leaving nothing to be desired.
+				Write and create invoices, complete partial payments and more.
+				Your accountant will be very happy. As well as your tax consultant.
 			</p>
 			<p class="t--delta">
-				Exportieren Sie Ihre hinterlegten Lieferscheine und Rechnungen gleich als
-				PDF. Auf Wunsch auch auf Ihrem eigenen Briefpapier. Dafür ist es doch
-				schließlich da.
+				Export your stored delivery notes and invoices directly as a PDF. If you wish, on your own letterhead. After all it’s there for that.
 			</p>
 			<p class="t--delta">
-				Wer den Pfennig nicht ehrt, ist den Taler nicht wert. Banque garantiert höchste
-				Präzision in der Handhabung von Brutto und Netto Preisen. Kein fehlender Cent
-				bei der Abrechnung. Nirgendwo. Versprochen.
+				Take care of the pennies, and the pounds will look after themselves.
+				Banque guarantees the highest precession when handling gross or net prices.
+				No penny will get lost when settling the invoice. Nowhere, we promise.
 			</p>
 			<ul class="product__features list--features--delta">
-				<li>exakte Berechnungen
-				<li>flexible Rechnungen
-				<li>Steuerzonen und Währungen
-				<li>Terminierungen und Daueraufträge
-				<li>Auto-Invoicing
-				<li>Kostenvoranschläge
-				<li>PDF–Ausgabe
-				<li>anpassbare Muster für z.B. Rechnungsnummern
+				<li>exact calculations
+				<li>flexible invoices
+				<li>tax zones and currencies
+				<li>termination and standing orders
+				<li>auto-invoicing
+				<li>estimates
+				<li>PDF output
+				<li>fully customizable sample invoices
 			</ul>
 		</div>
 	</section>
@@ -193,31 +184,24 @@ $this->title('B–Series: build custom websites that scale');
 				</div>
 			</div>
 			<p class="t--delta">
-				Haben Sie schon einmal versucht ihr Produkt auf einem Standard eCommerce System individuell zu
-				inszenieren? Die Qual der Wahl zwischen hundert und einem Template, die alle nicht so recht
-				zu Ihnen passen wollen?
+				Have you ever tried to deploy a customized product on a standard eCommerce system? Picking a template from hundreds, all not quite matching your vision?
 			</p>
 			<p class="t--delta">
-				Boutique macht es Designern und Programmierern einfacher die richtige
-				Tonalität für Ihre Kundschaft zu treffen und steht einer adäquaten Gestaltung nicht im Weg. Im
-				Gegenteil, denn Gestaltungsfreiheit ist einer der Hauptgründe, warum wir Boutique entwickelt
-				haben.
+				Find the right design tonality for your customer with Boutique.
+				Enabling adequate design and design freedom are the two main reasons why we developed Boutique.
 			</p>
 			<p class="t--delta">
-				Verwalten Sie Ihre Produkte, fassen selbige zu Gruppen zusammen und lassen Sie die
-				anfallenden Versandkosten vom System dynamisch berechnen. Das alles in logischen Bestell-
-				und Lieferabwicklungen, inklusive Zahlungsmethoden via PayPal, auf Rechnung oder Debit-Karte.
-				Einfacher geht es nicht.
+				Manage your products, combine them in groups and get your arising shipping costs calculated dynamically by the system. All in consistent order and delivery processing, including payment methods like PayPal, invoice or debit card.
 			</p>
 			<p class="t--delta">
-				Boutique enthält standardmäßig Banque.
+				Boutique includes Banque by default.
 			</p>
 			<ul class="product__features list--features--delta">
-				<li>Produkte und Produktgruppen mit Warenbestand
-				<li>Zahlung per Debit-Karte, Lastschrift, Rechnung, PayPal oder Kreditkarte
-				<li>Watchlist
-				<li>Lieferabwicklung und PDF–Lieferscheine
-				<li>Voucher
+				<li>products and product groups with inventory
+				<li>payment by debit card, invoice, PayPal or credit card
+				<li>watchlist
+				<li>delivery processing and PDF delivery notes
+				<li>vouchers
 			</ul>
 		</div>
 	</section>
@@ -225,18 +209,18 @@ $this->title('B–Series: build custom websites that scale');
 	<section class="features sc--gray">
 		<div class="limit--tight cp center-column">
 			<ul class="list--features--alpha">
-				<li>Mitbewerbern technologisch einen Schritt voraus
-				<li>Keine Templates von der Stange
-				<li>Einfache Bedienung
-				<li>HTML5 und Mobile
-				<li>Internationalisierbar
-				<li>Tagging
-				<li>Entwicklerfreundlich
-				<li>Role-based access control (RBAC)
-				<li>High-Performance und Throughput
-				<li>OWASP Sicherheitsrichtlinien
-				<li>E–Mailversand mit DKIM und SPF
-				<li>Solide Datenspeicherung mit Transaktionen
+				<li>stay one step ahead of competitors with technology
+				<li>no off-the-shelf templates
+				<li>easy handling
+				<li>HTML5 and mobile
+				<li>internationalisation possible
+				<li>tagging
+				<li>developer-friendly
+				<li>role-based access control (RBAC)
+				<li>high-performance und throughput
+				<li>OWASP security guidelines
+				<li>email dispatch with DKIM and SPF
+				<li>solid data storage with transactions
 			</ul>
 		</div>
 	</section>
