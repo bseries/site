@@ -25,7 +25,7 @@ $this->title('B–Series: build custom websites that scale');
 				</p>
 				<p>
 					Hard working content management professionals will find the
-					admin-panel straightfoward and powerful, yet easy to learn.
+					admin-panel straightforward and powerful, yet easy to learn.
 				</p>
 			</div>
 			<div class="hero__actions">
