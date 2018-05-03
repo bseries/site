@@ -31,17 +31,11 @@ for f in $(ls app/resources/g11n/po/*/LC_MESSAGES/*.po); do
 	msgfmt -o ${f/.po/.mo} --verbose $f
 done
 
+echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
+
 # Babelify in-place for full current ESx compatiblity.
 cat << EOF > .babelrc
 {
-	"presets": [
-		["env", {"targets": {"browsers": [
-			"last 2 versions",
-			"> 5%",
-			"ie 11",
-			"ff >= 48"
-		]}}]
-	],
 	"ignore": [
 		"underscore.js",
 		"require.js",

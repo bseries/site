@@ -166,3 +166,10 @@ MAIL_FROM="noreply@__DOMAIN__"
 
 # Separate multiple types by space (i.e. "text html").
 MAIL_TYPES="text"
+
+# -----------------------------------------------------------
+# Compatibility
+# -----------------------------------------------------------
+# Supported browsers, separate multiple constraints with a pipe symbol.
+# https://github.com/browserslist/browserslist#queries
+TARGET_BROWSERS="last 2 Chrome versions|last 2 Firefox versions|last 2 Safari versions|last 2 Edge versions|last 2 ChromeAndroid versions|last 2 iOS versions"
