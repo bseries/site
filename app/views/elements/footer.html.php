@@ -10,7 +10,8 @@ $site = Sites::current($this->_request);
 ?>
 <footer>
 	<div class="limit--normal cp center-column">
-		<?= $this->html->link('Imprint', 'Pages::imprint', ['scope' => 'app']) ?> /
+		<?= $this->html->link('Privacy', 'https://atelierdisko.de/privacy', ['target' => 'new']) ?> /
+		<?= $this->html->link('Imprint', 'https://atelierdisko.de/imprint', ['target' => 'new']) ?> /
 		<?= $this->_render('element', 'copyright', [
 			'holder' => $this->html->link(
 				'Atelier Disko',

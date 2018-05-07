@@ -15,8 +15,6 @@ class PagesController extends \lithium\action\Controller {
 
 	public function home() {}
 
-	public function imprint() {}
-
 	// Allows to advice crawler behavior. By default allows any crawler to crawl anything.
 	// Do not block access to media or assets as they are needed to render a preview of
 	// the site or for image search.
