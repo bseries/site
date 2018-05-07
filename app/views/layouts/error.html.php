@@ -13,6 +13,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 		<!-- Styles -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 		<?php
 			$styles = array_merge(
 				$this->assets->availableStyles('base'),
@@ -32,7 +33,7 @@
 		<?php
 			$scripts = array_merge(
 				[
-					'https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&rum=0',
+					'/app/js/compat/core',
 					'/app/js/require'
 				],
 				$this->assets->availableScripts('base'),
@@ -42,9 +43,6 @@
 		?>
 		<?php echo $this->assets->script($scripts) ?>
 		<?php echo $this->scripts() ?>
-
-		<!-- Misc -->
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!-- Dynamically added -->
 	</head>

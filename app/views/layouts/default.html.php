@@ -22,6 +22,7 @@ $library = $this->request()->library;
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 		<!-- Styles -->
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 		<?php
 			$styles = array_merge(
 				$this->assets->availableStyles('base'),
@@ -44,7 +45,7 @@ $library = $this->request()->library;
 		<?php
 			$scripts = array_merge(
 				[
-					'https://cdn.polyfill.io/v2/polyfill.min.js?features=es6&rum=0',
+					'/app/js/compat/core',
 					'/app/js/require'
 				],
 				$this->assets->availableScripts('base'),
@@ -62,9 +63,6 @@ $library = $this->request()->library;
 			<?php endif ?>
 		<?php endif ?>
 
-		<!-- Misc -->
-		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-
 		<!-- Dynamically added -->
 	</head>
 	<?php
@@ -75,15 +73,6 @@ $library = $this->request()->library;
 		}
 		if ($library === 'li3_docs') {
 			$classes[] = 'li3-docs';
-		}
-		if (isset($device)) {
-			foreach ($device as $name => $flag) {
-				if (is_bool($flag) && $flag ) {
-					$classes[] = 'device-' . strtolower(Inflector::slug($name));
-				} elseif (is_string($flag)) {
-					$classes[] = 'device-' . strtolower(Inflector::slug($name)) . '-' . strtolower($flag);
-				}
-			}
 		}
 		if (isset($extraBodyClasses)) {
 			$classes = array_merge($classes, $extraBodyClasses);

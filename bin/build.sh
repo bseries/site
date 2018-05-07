@@ -31,13 +31,22 @@ for f in $(ls app/resources/g11n/po/*/LC_MESSAGES/*.po); do
 	msgfmt -o ${f/.po/.mo} --verbose $f
 done
 
-# Babelify in-place for ES2015 compatiblity. Once we do not want to support IE11
-# and iOS Safari <= 9.3 anymore we can safely remove this line or use babel
-# to continously upgrade supported ECMAScript versions.
-babel app/assets/js \
-	-d app/assets/js \
-	--presets babel-preset-es2015 \
-	--ignore underscore.js,require.js,require,jquery.js,modernizr.js
+echo $TARGET_BROWSERS | tr '|' '\n' > .browserslistrc
+
+# Babelify in-place for full current ESx compatiblity.
+cat << EOF > .babelrc
+{
+	"ignore": [
+		"underscore.js",
+		"require.js",
+		"require",
+		"jquery.js",
+		"modernizr.js",
+		"core.js"
+	]
+}
+EOF
+babel app/assets/js -d app/assets/js
 
 for f in $(find app/assets/js -type f -name *.js); do
 	uglifyjs --compress --mangle -o $f.min -- $f && mv $f.min $f
@@ -46,6 +55,10 @@ done
 for f in $(ls app/assets/css/*.css); do
 	cssnextgen $f > $f.tmp && mv $f.tmp $f
 	sqwish $f -o $f.min && mv $f.min $f
+done
+for f in $(find app/assets/css/views -type f -name *.css); do
+    cssnextgen $f > $f.tmp && mv $f.tmp $f
+    sqwish $f -o $f.min && mv $f.min $f
 done
 
 # We can't restrict image search to ico and img directories as images may be
