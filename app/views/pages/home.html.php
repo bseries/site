@@ -20,7 +20,7 @@ $this->title('B–Series: build custom websites that scale');
 					modules.
 				</p>
 				<p>
-					Developers get direct access to internals, allowing you to create
+					Developers access internals directly, allowing you to create
 					custom sites without the need to build fundamentals from scratch.
 				</p>
 				<p>
@@ -78,8 +78,8 @@ $this->title('B–Series: build custom websites that scale');
 				Vimeo, YouTube and SoundCloud.
 			</p>
 			<p class="t--delta">
-				Without a sweat and thanks to professional features like async media transcoding and flexible
-				version generation, does Bento handle gigabytes of audio, video, documents and images.
+				Thanks to professional features like async media transcoding and flexible
+				version generation, does Bento handle gigabytes of audio, video, documents and images without a sweat.
 				<?= $this->html->link('Media processing', 'https://github.com/bseries/base_media', ['target' => 'new']) ?>,
 				respects color profiles embedded in your images
 				to create high definition results, even for Retina displays.
@@ -106,28 +106,30 @@ $this->title('B–Series: build custom websites that scale');
 				</div>
 			</div>
 			<p class="t--delta">
-				Effortlessly create and manage your website’s pages and posts with all features known from other blogging systems, i.e. WordPress.
-				Also included are tagging, embedding different types of media and a WYSIWYG editor.
+				Create and manage your website’s pages and posts effortlessly with all features known from other
+				blogging systems, i.e. WordPress. Also included are tagging, embedding different types of media
+				and a modern WYSIWYG editor.
 			</p>
 			<p class="t--delta">
-				You tweet 320 characters, write extensive texts on Facebook and post snapshots on Instagram?
-				Bureau makes it possible to save time and unite all content on your own site.
-				Comfortably tweet from your admin area to Twitter, Facebook and Co.
+				You tweet 320 characters, write extensive texts on Facebook and post fancy
+				pictures on Instagram? Bureau consolidates all social media content in one
+				place through the social-stream feature. Integrate the content into your
+				website.
 			</p>
 			<p class="t--delta">
-				If you want to inform your visitors about an important date, you can easily create and display new events with a date, time and place. Always keeping everything in view.
+				Have an important event planned? With Bureau you can create events and provide
+				date, time, place. Bureau also comes with a powerful RSVP feature, to invite
+				your clients easily.
 			</p>
 			<ul class="product__features list--features--delta">
-				<li>news
-				<li>banner
-				<li>smart social-stream
-				<li>record releases
+				<li>blogging features
+				<li>social-stream
 				<li>dynamic content
-				<li>powerful WYSIWYG editor
-				<li>events
-				<li>video library
+				<li>modern WYSIWYG editor
+				<li>media library
+				<li>event with invitations and RSVP
 				<li>corporate- and artist portfolios
-				<li>sorting posts via drag and drop
+				<li>sorting via drag and drop
 			</ul>
 			<div class="product__actions">
 				<?= $this->html->link(
@@ -150,12 +152,12 @@ $this->title('B–Series: build custom websites that scale');
 				</div>
 			</div>
 			<p class="t--delta">
-				Banque is a complete accounting system leaving nothing to be desired.
-				Write and create invoices, complete partial payments and more.
-				Your accountant will be very happy. As well as your tax consultant.
+				Banque is a complete accounting system leaving little to be desired.
+				Write and create invoices and estimates, log complete or partial payments  and more.
+				Your accountant will sure be quite happy. As well as your tax consultant.
 			</p>
 			<p class="t--delta">
-				Export your stored delivery notes and invoices directly as a PDF. If you wish, on your own letterhead. After all it’s there for that.
+				Export your invoices directly as a PDF. If you wish, on your own letterhead. After all it’s there for that.
 			</p>
 			<p class="t--delta">
 				Take care of the pennies, and the pounds will look after themselves.
@@ -164,13 +166,12 @@ $this->title('B–Series: build custom websites that scale');
 			</p>
 			<ul class="product__features list--features--delta">
 				<li>exact calculations
-				<li>flexible invoices
+				<li>flexible invoices and estimates
 				<li>tax zones and currencies
 				<li>termination and standing orders
 				<li>auto-invoicing
 				<li>estimates
-				<li>PDF output
-				<li>fully customizable sample invoices
+				<li>fully customizable PDFs
 			</ul>
 		</div>
 	</section>
@@ -184,14 +185,18 @@ $this->title('B–Series: build custom websites that scale');
 				</div>
 			</div>
 			<p class="t--delta">
-				Have you ever tried to deploy a customized product on a standard eCommerce system? Picking a template from hundreds, all not quite matching your vision?
+				Have you ever tried to develop using a standard eCommerce system? Picking
+				a template from hundreds, all not quite matching your vision?
 			</p>
 			<p class="t--delta">
 				Find the right design tonality for your customer with Boutique.
 				Enabling adequate design and design freedom are the two main reasons why we developed Boutique.
 			</p>
 			<p class="t--delta">
-				Manage your products, combine them in groups and get your arising shipping costs calculated dynamically by the system. All in consistent order and delivery processing, including payment methods like PayPal, invoice or debit card.
+				Manage your products, combine them in groups and get shipping costs
+				calculated dynamically by the system. All with consistent order and
+				delivery processing, including payment methods like PayPal, invoicing or
+				debit card.
 			</p>
 			<p class="t--delta">
 				Boutique includes Banque by default.
@@ -209,18 +214,13 @@ $this->title('B–Series: build custom websites that scale');
 	<section class="features sc--gray">
 		<div class="limit--tight cp center-column">
 			<ul class="list--features--alpha">
-				<li>stay one step ahead of competitors with technology
+				<li>one step ahead of competitors
 				<li>no off-the-shelf templates
-				<li>easy handling
-				<li>HTML5 and mobile
-				<li>internationalisation possible
-				<li>tagging
+				<li>full internationalisation
 				<li>developer-friendly
 				<li>role-based access control (RBAC)
 				<li>high-performance und throughput
-				<li>OWASP security guidelines
-				<li>email dispatch with DKIM and SPF
-				<li>solid data storage with transactions
+				<li>solid data with transactions
 			</ul>
 		</div>
 	</section>
