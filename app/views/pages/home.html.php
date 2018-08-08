@@ -189,7 +189,7 @@ $this->title('B–Series: build custom websites that scale');
 				a template from hundreds, all not quite matching your vision?
 			</p>
 			<p class="t--delta">
-				Find the right design tonality for your customer with Boutique.
+				Find the right design tonality for your clients with Boutique.
 				Enabling adequate design and design freedom are the two main reasons why we developed Boutique.
 			</p>
 			<p class="t--delta">
